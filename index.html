@@ -1,0 +1,97 @@
+<html>
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<center>
+<div class="container">
+	<img src="kop fix.png" width=100%>
+</div>
+
+<center>
+<div class="w3-bar w3-green">
+   <button class="w3-bar-item w3-button" onclick="openKota('home')">HOME</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('hispa')">HISPA</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('hiswita')">HISWITA</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('opia')">OPIA</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('opim')">OPIM</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('hisla')">HISLA</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('profile')">PROFILE</button>
+</div>	
+
+<div id="home" class="w3-container kota" style="display:block">
+ <center>
+ <h1>SELAMAT DATANG DI HALAMAN SAYA</h1>
+ <h2>Pengurus Pusat Himpunan Santri Pasundan akan menjelaskan sedikit tentang Organisasi Daerah yang ada di lingkungan Pesantren Tebuireng</h2>
+</div>
+
+<div id="hispa" class="w3-container kota w3-animate-top" style="display:none">
+ <center>
+ <h2>HIMPUNAN SANTRI PASUNDAN</h2>
+ <img src="hispa.png" width=30%>
+ <p>Himpunan Santri Pasundan atau yang biasa disingkat HISPA adalah salah satu organisasi daerah yang berada dalam naungan
+ Pondok Pesantren Tebuireng. HISPA merupakan wadah bagi para santri yang berasal dari daerah Jawa Barat dan sekitarnya. 
+ HISPA juga sering mengadakan berbagai acara yang membantu para santri khususnya yang berasal dari Jawa Barat dan sekitarnya
+ untuk mengembangkan kreativitas mereka. HISPA juga merupakan organisasi daerah yang paling tua diantara semua organisasi daerah yang ada di
+ Pondok Pesantren Tebuireng</p>
+</div>
+
+<div id="hiswita" class="w3-container kota w3-animate-bottom" style="display:none">
+ <center>
+ <h2>HIMPUNAN SANTRI WILAYAH INDONESIA TIMUR DAN TENGAH</h2>
+ <img src="hiswita.png">
+ <p>Himpunan Santri Wilayah Indonesia Timur dan Tengah atau yang biasa disingkat HISWITA adalah salah satu organisasi daerah yang berada dalam naungan
+ Pondok Pesantren Tebuireng. HISWITA merupakan wadah bagi para santri yang berasal dari daerah Indonesia Timur dan Tengah. 
+ HISWITA juga sering mengadakan berbagai acara yang membantu para santri khususnya yang berasal dari Indonesia Timur dan Tengah
+ untuk mengembangkan kreativitas mereka.</p>
+</div>
+
+<div id="opia" class="w3-container kota w3-animate-left" style="display:none">
+ <center>
+ <h2>ORGANISASI PELAJAR ISLAM ANDALAS</h2>
+ <img src="opia.png" width=30%>
+ <p>Organisasi pelajar Islam Andalas atau yang biasa disingkat OPIA adalah salah satu organisasi daerah yang berada dalam naungan
+ Pondok Pesantren Tebuireng. OPIA merupakan wadah bagi para santri yang berasal dari daerah Pulau Sumatera. 
+ OPIA juga sering mengadakan berbagai acara yang membantu para santri khususnya yang berasal dari Pulau Sumatera
+ untuk mengembangkan kreativitas mereka.</p>
+</div>
+
+<div id="opim" class="w3-container kota w3-animate-zoom" style="display:none">
+ <center>
+ <h2>ORGANISASI PELAJAR ISLAM MALANG</h2>
+ <img src="opim.jpg" width=30%>
+ <p>Organisasi Pelajar Islam Malang atau yang biasa disingkat OPIM adalah salah satu organisasi daerah yang berada dalam naungan
+ Pondok Pesantren Tebuireng. OPIM merupakan wadah bagi para santri yang berasal dari daerah Malang dan sekitarnya. 
+ OPIM juga sering mengadakan berbagai acara yang membantu para santri khususnya yang berasal dari Malang dan sekitarnya
+ untuk mengembangkan kreativitas mereka.</p>
+</div>
+
+<div id="hisla" class="w3-container kota w3-animate-right" style="display:none">
+ <center>
+ <h2>HIMPUNAN SANTRI  KABUPATEN LAMONGAN</h2>
+ <img src="hisla.jpg">
+ <p>Himpunan Santri Kabupaten Lamongan atau yang biasa disingkat HISLA adalah salah satu organisasi daerah yang berada dalam naungan
+ Pondok Pesantren Tebuireng. HISLA merupakan wadah bagi para santri yang berasal dari daerah Lamongan dan sekitarnya. 
+ HISLA juga sering mengadakan berbagai acara yang membantu para santri khususnya yang berasal dari Lamongan dan sekitarnya
+ untuk mengembangkan kreativitas mereka.</p>
+</div>
+
+<div id="profile" class="w3-container kota" style="display:none">
+ <center>
+ <h2>PROFILE MAHASISWA</h2>
+ <table>
+ <tr><td>NAMA <td>: MUHAMMAD ELSIANO GIBRAN ALKAF
+ <tr><td>NIM <td>: 10122237
+ <tr><td>KELAS <td>: IF7
+</div>	
+	
+<script>
+function openKota(namakota) {
+   var i;
+   var x = document.getElementsByClassName("kota");
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+   }
+   document.getElementById(namakota).style.display = "block";
+   }
+</script>
+</html>
